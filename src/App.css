@@ -1,0 +1,39 @@
+.navbar{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFmnWrsb4vuQOKIhXe5Tf2Cx9xLTDkH1nqPw&s);
+    background-size: cover;
+    background-position: center;
+   
+}
+body{
+    background-image: url(https://t4.ftcdn.net/jpg/07/41/09/09/360_F_741090944_FV8Iik9MccRaDPVd1TxU2y4rdnZw5zcp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.authPage{
+    width: 100vw;
+    height: calc(100vh - 56px);
+    
+    display: flex;
+    align-items: center;
+    background-image: url(https://t4.ftcdn.net/jpg/07/64/55/75/360_F_764557526_HlwV6rYpIxrfhrmlpTzl74INFoMmJs9Z.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.form1{
+    background-color: rgb(0, 0, 0,0.4);
+    color: white;
+}
+.search{
+    margin-right: 300px;
+}
+.pay{
+    background-color: rgb(0, 255, 255,0.5);
+}
+.single{
+    background-color: rgb(166, 201, 201,0.7);
+}
