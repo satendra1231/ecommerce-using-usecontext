@@ -30,17 +30,17 @@ function App() {
 
      <Routes>
           {login===true && <Route path='/' element={<Home />}/>}
-          {login===false && <Route path='/' element={<Navigate to={'/login'}/> }/>}
+          {login===false && <Route path='/' element={<Navigate to={'/register'}/> }/>}
         { login===true &&  <Route path='/cart' element={<Cart />}/>}
-        { login===false &&  <Route path='/cart' element={<Navigate to={'/login'}/> }/>}         
+        { login===false &&  <Route path='/cart' element={<Navigate to={'/register'}/> }/>}         
          {login===true && <Route path='/login' element={<Navigate to={'/'}/> }/>}
          {login===false && <Route path='/login' element={<Login />}/>} 
          <Route path='/register' element={<Signup />}/>           
          <Route path='/single' element={<Single/>}/>
          {login===true && <Route path='/payment' element={<Payment/>}/>}
-         {login===false && <Route path='/payment' element={<Navigate to={'/login'}/> }/>}
+         {login===false && <Route path='/payment' element={<Navigate to={'/register'}/> }/>}
           {login===true && <Route  path='/success' element={<Success/>}/>}
-          {login===false && <Route  path='/success' element={<Navigate to={'/login'}/> }/>}
+          {login===false && <Route  path='/success' element={<Navigate to={'/register'}/> }/>}
           <Route path='/*' element={<Pagenot/>}/>
      </Routes>
      <ToastContainer />
