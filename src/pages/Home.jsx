@@ -27,7 +27,7 @@ let itemperpage=10
 let lastIndex=currentpage*itemperpage
 let firstIndex=lastIndex-itemperpage 
 
-let searchedItems;
+ let searchedItems;
  searchedItems=allitem.filter((ele)=>ele.category.toLowerCase().includes(ctx.searchItem))
 //console.log(searchedItems)
 if(!searchedItems){
@@ -96,8 +96,9 @@ useEffect(()=>{
     
      </div>
 
-   <nav aria-label="Page navigation example">
-  <ul className="pagination mt-2 flex-wrap">
+  <div className='text-truncate'>
+  <nav aria-label="Page navigation example ">
+  <ul className="pagination mt-2 flex-wrap ">
     <li onClick={handlePrev} className="page-item"><Link className="page-link" to="#">Previous</Link></li>
 
    {
@@ -108,6 +109,7 @@ useEffect(()=>{
     <li onClick={handleNext} className="page-item"><Link className="page-link" to="#">Next</Link></li>
   </ul>
 </nav>
+  </div>
 
 
    </div>
