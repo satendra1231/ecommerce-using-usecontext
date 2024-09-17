@@ -31,7 +31,7 @@ const Login = () => {
     //  console.log("login successful")
       toast.success("login Successful",{position:"top-center"})
       
-      localStorage.setItem('useDetails', JSON.stringify({login:true, email:checkExists.email}))
+      localStorage.setItem('userDetails', JSON.stringify({login:true, email:checkExists.email}))
       ctx.setuser({login:true,email:checkExists.email})
       Nevigate('/')     
     }
@@ -41,7 +41,7 @@ const Login = () => {
     }
 
    }
-   else{
+   else{ 
    // console.log("user not register")
     toast.error("user Not found please sign up",{position:"top-center"})
    }
