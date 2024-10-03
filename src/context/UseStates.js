@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import userContext from './UserContext'
 const UseStates = (props) => {
-let details=JSON.parse(localStorage.getItem('useDetails'))
+let details=JSON.parse(localStorage.getItem('userDetails'))
     const [user, setuser] = useState({
         login:details? details.login : false,
         email:details? details.email : "",
