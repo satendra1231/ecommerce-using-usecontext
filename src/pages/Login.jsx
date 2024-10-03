@@ -16,7 +16,7 @@ const Login = () => {
   });
 
   let handlesignchanger=(e)=>{
-    let value=e.target.value 
+    let value=e.target.value
    // console.log(value)
     setlogin({...login,[e.target.name]:e.target.value})
   }
